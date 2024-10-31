@@ -7,7 +7,6 @@ function canArrange(arr, k) {
         remainderMap[remainder]++;
     }
 
-    // Step 2: Check for valid pairs
     if (remainderMap[0] % 2 !== 0) return false;  // Elements with remainder 0 should be even
 
     for (let i = 1; i < k; i++) {
